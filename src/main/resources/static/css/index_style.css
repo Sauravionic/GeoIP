@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Poppins&display=swap');
+
+:root {
+    --tuna: #373c43;
+    --dust-storm: #e2c2c2;
+    --apple-blossom: #ab433c;   
+    --suva-gray: #867f85;
+    --santas-gray: #9e9da3;
+    --athens-gray: #f4f2f5; 
+    --dusty-gray: #999494;  
+    --matrix: #b45a54;
+    --copper-rose: #9f6464; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px 10px 90px;
+    align-content: center;
+}
+nav h1 {
+    margin: 0;
+    font-size: 45px;
+    padding-top: 7px;
+    color: var(--tuna);
+    font-family: 'Akronim',sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+nav h1:hover {
+    color: var(--apple-blossom);
+}
+nav .icon img {
+    height:50px;
+    width: 50px;
+}
+.upperBody {
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    background-color: #202124;
+    /* margin: 3% 50px 0 50px; */
+    align-content: center;
+    border-radius: 45px;
+}
+.upperBody .image {
+    width: 590px;
+    max-width: 700px;
+}
+.upperBody .formGroup {
+    flex-basis: 48%;
+    align-self: center;
+    /* text-align: center; */
+}
+.formGroup {
+    /* display: none; */
+    display: block;
+    position: relative;
+}
+.formGroup h1 {
+    color: white;
+    font-family: 'Comfortaa',sans-serif;
+    font-size: 45px;
+    margin-bottom: 14px;
+}
+.formGroup p {
+    color: white;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    letter-spacing: 1px;
+    font-family: 'Poppins',sans-serif;
+    opacity: 0.7;
+}
+
+.formGroup input {
+    width: 60%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 25px;
+    font-family: 'Poppins',sans-serif;
+    outline: none;
+    letter-spacing: 1px;
+    color: #202124;
+    opacity: 0.86;
+}
+.formGroup input::placeholder {
+    color: var(--suva-gray);
+}
+.formGroup #lbl {
+    display: none;
+    position: absolute;
+    bottom: -28px;
+    left: 16px;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    color: rgb(160, 50, 50);
+}
+.formGroup .submit {
+    position: absolute;
+    bottom: -0.1%;
+    height: 55px;
+    right: 27%;
+    border: none;
+    border-radius: 9px;
+    width: 15%;
+    background-color: var(--apple-blossom);
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: #373c43;
+}
+.formGroup .fal {
+    color: white;
+}
+.upperCard {
+    background-color: white;
+    flex-basis: 39%;
+    border-radius: 23px;
+    align-self: center;
+    /* width: 100%; */
+    margin-right: 70px;
+    /* padding: 10px 20px 10px 20px; */
+    padding: 25px;
+    /* height: 300px; */
+    display:none;
+}
+.hostname, .isp, .country, .state, .city, .pincode, .mobile {
+    display: flex;
+    justify-content: space-between;
+}
+.hostname h3, .isp h3, .country h3, .state h3, .city h3, .pincode h3, .mobile h3{
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'Comfortaa',sans-serif;
+    color: #ab433c;
+    letter-spacing: 1px;
+}
+
+.hostname p, .isp p, .country p, .state p, .city p, .pincode p, .mobile p{
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 1px;
+}
+.mobile p , .mobile h3{
+    margin: 0;
+}
+footer h3 {
+    position: absolute;
+    bottom: 2%;
+    left: 46%;
+    font-family: 'Poppins',sans-serif;
+    color: var(--apple-blossom);
+    cursor:pointer;
+}
+footer h3:hover {
+    color: #373c43;
+}
+
+@media only screen
+and (min-device-width : 200px)
+and (max-device-width : 800px) {
+
+    nav {
+        padding: 15px;
+    }
+    nav h1 {
+        padding-top: 0;
+    }
+    nav .icon img {
+        height: 43px;
+        width: 43px;
+    }
+    .upperBody {
+        flex-direction: column;
+        position: unset;
+        transform: inherit;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 40px;
+        border-radius: 30px;
+    }
+    .upperBody .image {
+        width: 100%;
+        margin: auto;
+    }
+    .formGroup {
+        text-align: center;
+        /* display: none; */
+    }
+    .formGroup h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    .formGroup p {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .formGroup input {
+        width: 69%;
+        margin-bottom: 30px;
+    }
+    .formGroup .submit {
+        position: absolute;
+        bottom: 30px;
+        height: 55px;
+        right: 7%;
+        border: none;
+        border-radius: 9px;
+        width: 18%;
+        background-color: var(--apple-blossom);
+    }
+    .upperCard {
+        display: none;
+        margin: auto;
+        margin-bottom: 30px;
+        width: 78%;
+    }
+
+    .formGroup #lbl {
+        position: absolute;
+        bottom: 6px;
+        left: 48px;
+        font-size: 13px;
+        font-family: 'Poppins',sans-serif;
+        color: rgb(160, 50, 50);
+    }
+
+}
