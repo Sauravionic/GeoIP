@@ -13,7 +13,7 @@ $(document).ready(function() {
     $("#submit").click(function() {
         $.ajax({
             type : 'POST',
-            url : 'http://localhost:8080/ipinput',
+            url : 'https://iogeoip.herokuapp.com/ipinput',
             data : JSON.stringify({
                 "ip" : $("#ip").val()
             }),
