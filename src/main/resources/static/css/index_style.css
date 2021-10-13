@@ -234,4 +234,13 @@ and (max-device-width : 800px) {
         color: rgb(160, 50, 50);
     }
 
+    footer h3 {
+        position: absolute;
+        bottom: -29%;
+        left: 32%;
+        font-family: 'Poppins',sans-serif;
+        color: var(--apple-blossom);
+        cursor: pointer;
+    }
+
 }
